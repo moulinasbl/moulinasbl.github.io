@@ -1,0 +1,88 @@
+header {
+}
+
+.name {
+	color:$headerTextColor;
+	font-family: $headerFont;
+	font-size:3em;
+	display:inline-block;
+	line-height:2em;
+	vertical-align:middle;
+
+	@include mq(medium) {
+		font-size:4em;
+	}
+
+	a {
+		text-decoration:none;
+	}
+}
+
+.logo {
+	display:inline-block;
+	position:relative;
+	vertical-align:top;
+	height:137px;
+	width:214px;
+
+
+	.body {
+		background:url(../img/logo_corps.png);
+		background-size:100% 100%;
+		position:absolute;
+		width:214px;
+		height:137px;
+		top:0;
+		left:0;
+		z-index:0;
+	}
+
+	.wings {
+		animation: spin 10s linear infinite;
+		background:url(../img/logo_ailes.png);
+		background-size:100% 100%;
+		position:absolute;
+		width:120px;
+		height:120px;
+		top:0;
+		left:17px;
+		z-index:1;
+	}
+
+	&:hover {
+		.wings {
+			animation-play-state:paused;
+		}
+	}
+}
+
+.language-switcher {
+
+	ul {
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+
+	li {
+		display:inline-block;
+	}
+
+	.selected a {
+		text-decoration: none;
+	}
+
+	@include mq(medium) {
+		float:right;
+		padding:.5em;
+
+		li {
+			display:block;
+		}
+	}
+}
+
+/* Let's make this mill turn */
+@keyframes spin {
+	100% { transform: rotate(360deg); }
+}

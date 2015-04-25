@@ -1,0 +1,21 @@
+.intro {
+	color:$introTxtColor;
+	background:$introBgColor;
+	font-size:1.1em;
+	margin:1em 0;
+	padding:1em;
+
+	@include mq(medium) {
+		font-size:1.2em;
+	}
+}
+
+.address {
+	@extend %grid__module;
+	@extend %medium-span-2of3;
+}
+
+.map {
+	@extend %grid__module;
+	@extend %medium-span-1of3;
+}

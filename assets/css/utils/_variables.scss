@@ -1,0 +1,44 @@
+/* == Colors == */
+
+$black: #000000;
+$white: #FFFFFF;
+
+$blueLight: #4098B3;
+$blueLighter: mix($white, $blueLight, 20%);
+$blueLightest: mix($white, $blueLight, 80%);
+$blueDark: mix($black, $blueLight, 50%);
+$blueDarker: mix($black, $blueLight, 60%);
+
+$greyLight: #202020;
+
+
+$pageBgColor: $blueDark;
+
+$mainTextColor: $greyLight;
+$mainSelectedBgColor: $blueDark;
+$mainSelectedTxtColor: $white;
+
+$navItemBgColor: $blueLight;
+$navItemTxtColor: $white;
+$navItemBorderColor: $blueDark;
+$navItemHoverBgColor: $blueLighter;
+
+$strongTxtColor: $blueLight;
+
+$headerTextColor: $blueLight;
+$headingTextColor: $blueDark;
+
+$introBgColor: $blueLightest;
+$introTxtColor: $blueDark;
+
+$footerBgColor: $blueDark;
+$footerTxtColor: $white;
+
+$linksColor: $blueLight;
+
+/* == Fonts == */
+
+$bettyFont: 'bettyregular';
+
+$headerFont: $bettyFont, sans-serif;
+$navFont: $bettyFont, sans-serif;

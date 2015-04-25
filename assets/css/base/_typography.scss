@@ -1,0 +1,21 @@
+/* Font size */
+$fontSize: 18px;
+
+
+/* Font families */
+@font-face {
+	font-family: $bettyFont;
+	src: url('../fonts/betty_regular-webfont.eot');
+	src: url('../fonts/betty_regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/betty_regular-webfont.woff2') format('woff2'),
+		 url('../fonts/betty_regular-webfont.woff') format('woff'),
+		 url('../fonts/betty_regular-webfont.ttf') format('truetype'),
+		 url('../fonts/betty_regular-webfont.svg#bettyregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font: #{$fontSize}/1.5 Calibri, Ubuntu, sans-serif;
+	color: $mainTextColor;
+}

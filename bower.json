@@ -1,0 +1,20 @@
+{
+  "name": "moulinasbl.eu",
+  "version": "1.0.0",
+  "authors": [
+    "Quentin Delcourt <kant312@gmail.com>"
+  ],
+  "description": "moulinasbl.eu",
+  "main": "index.html",
+  "license": "MIT",
+  "private": "true",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

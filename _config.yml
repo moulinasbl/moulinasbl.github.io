@@ -1,0 +1,3 @@
+# Build settings
+exclude: [node_modules/, package.json, gulpfile.js, gulp-config.js, bower.json, .bowerrc]
+markdown: kramdown

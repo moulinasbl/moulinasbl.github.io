@@ -1,0 +1,56 @@
+nav {
+	margin:.5em 0;
+
+	@include mq(medium) {
+		margin:0 0 .5em 12em;
+	}
+
+	ul, li {
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+
+	li {
+		font-size:1.4em;
+		display:inline-block;
+		width:50%;
+
+		@include mq(medium) {
+			font-size:1.4em;
+			width:auto;
+		}
+	}
+
+	a {
+		box-sizing:border-box;
+		background:$navItemBgColor;
+		color: $navItemTxtColor;
+		display:block;
+		padding:0 .8em;
+		line-height:2em;
+		height:2em;
+		text-align:center;
+		text-decoration:none;
+		transition:all .25s ease;
+		border-color: $navItemBorderColor;
+		font-family:$navFont;
+		font-weight:800;
+
+		&:hover {
+			background:$navItemHoverBgColor;
+			border-bottom:.3em solid $navItemBorderColor;
+		}
+
+	}
+}
+
+.about .about,
+.activities .activities,
+.contact .contact,
+.team .team {
+	a {
+		background:$navItemHoverBgColor;
+		border-bottom:.3em solid $navItemBorderColor;
+	}
+}

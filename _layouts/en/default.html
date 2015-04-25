@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>{% if page.title %} {{ page.title }} | {% endif %}Le Moulin asbl</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" media="all" />
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="logo"><div class="body"></div><div class="wings"></div></div>
+			<div class="name"><strong>Le Moulin</strong> asbl</div>
+			{% include languages.html %}
+		</header>
+
+		<main>
+
+			{{ content }}
+
+		</main>
+
+	</div>
+
+	<footer>
+		Copyright &copy; 2015 Le Moulin asbl
+	</footer>
+
+	<!-- Scripts -->
+	<script type='text/javascript' id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.2.0.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+	<!-- /Scripts -->
+</body>
+</html>
