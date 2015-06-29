@@ -3,15 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>{% if page.title %} {{ page.title }} | {% endif %}Le Moulin asbl</title>
+	<title>{% if page.title %} {{ page.title }} | {% endif %}Le Moulin a.s.b.l</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" media="all" />
 </head>
-<body>
+<body class="{{ page.section }}">
 	<div class="wrapper">
 		<header>
-			<div class="logo"><div class="body"></div><div class="wings"></div></div>
-			<div class="name"><strong>Le Moulin</strong> asbl</div>
 			{% include languages.html %}
+			<a href="/tr"><div class="logo"><div class="body"></div><div class="wings"></div></div></a>
+			<div class="name"><a href="/tr"><strong>Le Moulin</strong> a.s.b.l</a></div>
+			{% include nav_tr.html %}
 		</header>
 
 		<main>
@@ -23,7 +25,7 @@
 	</div>
 
 	<footer>
-		Copyright &copy; 2015 Le Moulin asbl
+		Copyright &copy; 2015 Le Moulin a.s.b.l
 	</footer>
 
 	<!-- Scripts -->
