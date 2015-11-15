@@ -782,6 +782,19 @@
 
 /* == Colors == */
 /* == Fonts == */
+/**
+ * CSS Media Object
+ */
+.media__img {
+  float: left;
+  margin-right: 1em; }
+
+.media__img img {
+  display: block; }
+
+.media__content {
+  float: left; }
+
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -1196,24 +1209,33 @@ h1, h2, h3 {
 
 h1 {
   font-weight: normal;
-  margin: 0 0 .25em 0; }
+  margin: 0 0 .25em 0;
+  font-size: 2.2em; }
   @media all and (min-width: 46.875em) {
     h1 {
-      font-size: 3em; } }
+      font-size: 2.4em; } }
 
 h2 {
   font-weight: normal;
-  margin: 0 0 .25em 0; }
+  margin: 0 0 .25em 0;
+  font-size: 1.8em; }
   @media all and (min-width: 46.875em) {
     h2 {
       font-size: 2em; } }
 
 h3 {
-  margin: 0 0 .25em 0; }
+  margin: 0 0 .25em 0;
+  font-size: 1.1em; }
+  @media all and (min-width: 46.875em) {
+    h3 {
+      font-size: 1.2em; } }
 
 h4 {
-  font-size: .9em;
-  margin: 0 0 .25em; }
+  margin: 0 0 .25em;
+  font-size: .8em; }
+  @media all and (min-width: 46.875em) {
+    h4 {
+      font-size: .9em; } }
 
 ::-moz-selection {
   background: #204c5a;
@@ -1222,6 +1244,16 @@ h4 {
 ::selection {
   background: #204c5a;
   color: #FFFFFF; }
+
+.aside {
+  border-top: 1px solid #66adc2;
+  margin-top: 1em;
+  padding-top: 1em; }
+  @media all and (min-width: 46.875em) {
+    .aside {
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0; } }
 
 .contentmodule {
   padding-top: 1em;

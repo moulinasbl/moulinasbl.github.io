@@ -1,0 +1,22 @@
+/**
+ * CSS Media Object
+ */
+
+.media
+{
+    &__img
+    {
+        float: left;
+        margin-right: 1em;
+    }
+
+    &__img img
+    {
+        display: block;
+    }
+
+    &__content
+    {
+        float: left;
+    }
+}
