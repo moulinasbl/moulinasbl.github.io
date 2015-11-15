@@ -1307,23 +1307,23 @@ h4 {
     -webkit-animation-play-state: paused;
             animation-play-state: paused; }
 
-.language-switcher ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.language-switcher li {
-  display: inline-block; }
-
-.language-switcher .selected a {
-  text-decoration: none; }
-
-@media all and (min-width: 46.875em) {
-  .language-switcher {
-    float: right;
-    padding: .5em; }
-    .language-switcher li {
-      display: block; } }
+.language-switcher {
+  margin-bottom: 1em; }
+  .language-switcher ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .language-switcher li {
+    display: inline-block; }
+  .language-switcher .selected a {
+    text-decoration: none; }
+  @media all and (min-width: 46.875em) {
+    .language-switcher {
+      float: right;
+      margin-bottom: 0;
+      padding: .5em; }
+      .language-switcher li {
+        display: block; } }
 
 /* Let's make this mill turn */
 @-webkit-keyframes spin {

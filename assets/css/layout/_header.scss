@@ -58,6 +58,8 @@ header {
 
 .language-switcher {
 
+    margin-bottom: 1em;
+
 	ul {
 		list-style:none;
 		margin:0;
@@ -74,6 +76,7 @@ header {
 
 	@include mq(medium) {
 		float:right;
+        margin-bottom: 0;
 		padding:.5em;
 
 		li {

@@ -8,24 +8,31 @@
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" media="all" />
 </head>
 <body class="{{ page.section }}">
-	<div class="wrapper">
-		<header>
-			{% include languages.html %}
-			<a href="/tr"><div class="logo"><div class="body"></div><div class="wings"></div></div></a>
-			<div class="name"><a href="/tr"><strong>Le Moulin</strong> a.s.b.l</a></div>
-			{% include nav_tr.html %}
-		</header>
+    <header>
+    	<div class="contentmodule">
+	        <div class="wrapper">
+                {% include languages.html %}
+                <a href="/tr"><div class="logo"><div class="body"></div><div class="wings"></div></div></a>
+                <div class="name"><a href="/tr"><strong>Le Moulin</strong> a.s.b.l</a></div>
+                {% include nav_tr.html %}
+            </div>
+        </div>
+    </header>
 
-		<main>
-
-			{{ content }}
-
-		</main>
-
-	</div>
+    <main>
+        <div class="contentmodule">
+            <div class="wrapper">
+                {{ content }}
+            </div>
+        </div>
+    </main>
 
 	<footer>
-		Copyright &copy; 2015 Le Moulin a.s.b.l
+        <div class="contentmodule">
+            <div class="wrapper">
+		        Copyright &copy; 2015 Le Moulin a.s.b.l
+            </div>
+        </div>
 	</footer>
 
 	<!-- Scripts -->
