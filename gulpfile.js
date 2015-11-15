@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 	http = require('http'),
 	plugins = require('gulp-load-plugins')({
 		//Add a prefix for each dependency that is not specific to gulp
-		pattern: ['gulp-*', 'gulp.*', 'browser-sync', 'ecstatic']
+		pattern: ['gulp-*', 'gulp.*', 'browser-sync']
 	}),
 	//We load the configuration file
 	config = require('./gulp-config');
@@ -80,13 +80,6 @@ gulp.task('startBrowserSync', function() {
 //Reload browser-sync
 gulp.task('reloadBrowserSync', function() {
 	plugins.browserSync.reload();
-});
-
-//Start a static web server
-gulp.task('startStaticServer', function() {
-	http.createServer(
-		plugins.ecstatic({root: config.staticServer.baseDir})
-	).listen(config.staticServer.port);
 });
 
 //Compile styles

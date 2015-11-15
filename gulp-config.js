@@ -17,7 +17,7 @@ module.exports = {
 	//Tasks lists
 	"tasks": {
 		"default": ["dev"],
-		"dev": ["compileStyles", "startStaticServer", "startBrowserSync", "watchFiles"]
+		"dev": ["compileStyles", "startBrowserSync", "watchFiles"]
 	},
 
 	//Watch files configuration
@@ -39,6 +39,7 @@ module.exports = {
 	//BrowserSync config
 	"browserSync": {
 		"baseDir": "./_site",
+        "proxy": "0.0.0.0:4000",
 		"port": 3000
 	},
 	//ESLint config
