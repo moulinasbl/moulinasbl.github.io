@@ -1384,6 +1384,12 @@ nav {
   background: #66adc2;
   border-bottom: 0.3em solid #204c5a; }
 
+.activity__img {
+  width: 33%; }
+
+.activity__content {
+  width: 60%; }
+
 .icon {
   display: inline-block;
   width: 32px;
@@ -1392,6 +1398,11 @@ nav {
     fill: #FFFFFF;
     width: 100%;
     height: 100%; }
+
+.list-bare {
+  padding: 0;
+  margin: 0 0 1em 0;
+  list-style: none; }
 
 .fluidimage {
   max-width: 100%; }
