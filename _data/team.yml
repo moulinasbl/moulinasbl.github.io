@@ -1,0 +1,48 @@
+-
+    name: Serpil Özhan
+    id: serpil
+    role_fr: Psychologue
+    role_nl: Psychologe
+    role_tr: Psikolog
+
+-
+    name: Selçuk Perin
+    id: selcuk
+    role_fr: Traducteur / Consultant
+    role_nl: Vertaler / Consultant
+    role_tr: Tercüman ve Danışman
+
+-
+    name: Cansu Güngör
+    id: cansu
+    role_fr: Assistante psychologue
+    role_nl: Psychologisch assistente
+    role_tr: Psikolojik asistan
+
+-
+    name: Melike Karadayi
+    id: melike
+    role_fr: Design / Communication
+    role_nl: Design / Communicatie
+    role_tr: Çizim/İletişim
+
+-
+    name: Quentin Delcourt
+    id: quentin
+    role_fr: IT / Communication
+    role_nl: IT / Communicatie
+    role_tr: Bilgi İşlem/İletişim
+
+-
+    name: Hakan Husnu Erzurumlu
+    id: hakan
+    role_fr: Avocat
+    role_nl: Advocaat
+    role_tr: Avukat ve yasal bilgilendirme
+
+-
+    name: Roland Modrie
+    id: roland
+    role_fr: Coordinateur
+    role_nl: Coördinator
+    role_tr: Koordinatör

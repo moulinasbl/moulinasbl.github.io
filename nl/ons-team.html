@@ -6,30 +6,17 @@ section: team
 ---
 
 <div class="members grid"><!--
-
-	 --><div class="member">
-		<h3>Serpil Özhan</h3>
-		<h4>Psychologe</h4>
-	</div><!--
-	 --><div class="member">
-		<h3>Selçuk Perin</h3>
-		<h4>Vertaler / Consultant</h4>
-	</div><!--
-	 --><div class="member">
-		<h3>Cansu Güngör</h3>
-		<h4>Psychologisch assistente</h4>
-	</div><!--
-	 --><div class="member">
-		<h3>Melike Karadayi</h3>
-		<h4>Design / Communicatie</h4>
-	</div><!--
-	 --><div class="member">
-		<h3>Quentin Delcourt</h3>
-		<h4>IT / Communicatie</h4>
-	</div><!--
-	 --><div class="member">
-		<h3>Hakan Husnu Erzurumlu</h3>
-		<h4>Advocaat</h4>
-	</div><!--
-
- --></div>
+    -->{% for member in site.data.team %}<!--
+         --><div class="member  grid__module  medium-span-6of12">
+    <div class="media">
+        <div class="media__img">
+            <img src="/assets/img/team_{{ member.id }}.jpg" alt="" />
+        </div>
+        <div class="media__content">
+            <h3>{{ member.name }}</h3>
+            <h4>{{ member.role_nl }}</h4>
+        </div>
+    </div>
+</div><!--
+    -->{% endfor %}<!--
+--></div>
