@@ -1384,6 +1384,15 @@ nav {
   background: #66adc2;
   border-bottom: 0.3em solid #204c5a; }
 
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px; }
+  .icon svg {
+    fill: #FFFFFF;
+    width: 100%;
+    height: 100%; }
+
 .fluidimage {
   max-width: 100%; }
 
