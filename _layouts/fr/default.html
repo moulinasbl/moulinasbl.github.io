@@ -8,24 +8,46 @@
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" media="all" />
 </head>
 <body class="{{ page.section }}">
-	<div class="wrapper">
-		<header>
-			{% include languages.html %}
-			<a href="/fr"><div class="logo"><div class="body"></div><div class="wings"></div></div></a>
-			<div class="name"><a href="/fr"><strong>Le Moulin</strong> a.s.b.l</a></div>
-			{% include nav_fr.html %}
-		</header>
+    <header>
+        <div class="contentmodule">
+            <div class="wrapper">
+                {% include languages.html %}
+                <a href="/fr"><div class="logo"><div class="body"></div><div class="wings"></div></div></a>
+                <div class="name"><a href="/fr"><strong>Le Moulin</strong> a.s.b.l</a></div>
+                {% include nav_fr.html %}
+            </div>
+        </div>
+    </header>
 
-		<main>
+    <div class="contentmodule">
+        <div class="wrapper">
+            <div class="grid">
+                <div class="grid__module  medium-span-9of12">
+                    <main class="maincontent">
 
-			{{ content }}
+                        {{ content }}
 
-		</main>
-
+                    </main>
+                </div><!--
+                --><div class="grid__module  medium-span-3of12">
+                    <aside class="aside">
+                        <h2>Actualités</h2>
+                        <p class="text-small"><em>15/11/2015</em></p>
+                        <img class="fluidimage" src="/assets/img/aside_poster_violences_femmes_400w.jpg" />
+                        <p>L'asbl <a target="_blank" href="https://www.facebook.com/ciproc.be/?fref=photo">CIProC</a> organisera
+                            <a target="_blank" href="https://www.facebook.com/events/1686526271560192/">une soirée de sensibilisation à la violence faite aux femmes</a> le samedi 28 novembre 2015.</p>
+                    </aside>
+                </div>
+            </div>
+        </div>
 	</div>
 
 	<footer>
-		Copyright &copy; 2015 Le Moulin a.s.b.l
+        <div class="contentmodule">
+            <div class="wrapper">
+		        Copyright &copy; 2015 Le Moulin a.s.b.l
+            </div>
+        </div>
 	</footer>
 
 	<!-- Scripts -->

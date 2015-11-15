@@ -19,3 +19,9 @@ body {
 	font: #{$fontSize}/1.5 Calibri, Ubuntu, sans-serif;
 	color: $mainTextColor;
 }
+
+/* Text variants */
+.text-small
+{
+    font-size: .8em;
+}

@@ -6,10 +6,13 @@
 @import 'base/typography';
 @import 'base/base';
 
+@import 'layout/aside';
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/nav';
+
+@import 'components/media';
 
 @import 'pages/homepage';
 @import 'pages/contact';

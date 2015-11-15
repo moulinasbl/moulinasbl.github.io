@@ -7,7 +7,8 @@
 //Load gulp and its associated plugins through the plugin autoloader
 var gulp = require('gulp'),
 	http = require('http'),
-	plugins = require('gulp-load-plugins')({
+    exec = require('child_process').exec,
+    plugins = require('gulp-load-plugins')({
 		//Add a prefix for each dependency that is not specific to gulp
 		pattern: ['gulp-*', 'gulp.*', 'browser-sync']
 	}),
@@ -156,12 +157,10 @@ gulp.task('watchFiles', function() {
 //Jekyll build
 gulp.task('jekyll', function (gulpCallBack){
 	var spawn = require('child_process').spawn;
-	var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
-
-	jekyll.on('exit', function(code) {
+	var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'}).on('close', function() {
 		gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: '+code);
 		plugins.browserSync.reload();
-	});
+    });
  });
 
 //Create tasks defined in the configuration

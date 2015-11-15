@@ -23,7 +23,7 @@ module.exports = {
 	//Watch files configuration
 	"watchFiles": {
 		"./assets/css/*.scss,./assets/css/**/*.scss": ["compileStyles"],
-		"./en/*.html,./fr/*.html,./tr/*.html,./_layouts/**/*.html,./_includes/**/*.html": ["jekyll"]
+		"./_site/index.html": ["reloadBrowserSync"]
 	},
 
 	/* Plugins and task settings */
@@ -38,9 +38,9 @@ module.exports = {
 	],
 	//BrowserSync config
 	"browserSync": {
-		"baseDir": "./_site",
-        "proxy": "0.0.0.0:4000",
-		"port": 3000
+		"server": "./_site",
+		"port": 3000,
+        "open": false
 	},
 	//ESLint config
 	"eslint": {
@@ -81,10 +81,5 @@ module.exports = {
 	"imagemin": {
         "progressive": true,
         "interlaced": true
-    },
-	//Static server config
-	"staticServer": {
-		"baseDir": "./_site",
-		"port": 8080
-	}
+    }
 };
