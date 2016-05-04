@@ -1,0 +1,13 @@
+<ul class="grid"><!--
+{% for file in site.static_files %}
+    {% if file.path contains page.img_folder %}
+        {% unless file.path contains 'thumb.jpg' %}
+        --><li class="grid__module  medium-span-3of12">
+    <a href="{{ file.path }}">
+        <img class="fluidimage" src="{{ site.baseurl }}{{ file.path | replace: '.', '_thumb.' }}" alt="image" />
+    </a>
+</li><!--
+        {% endunless %}
+    {% endif %}
+{% endfor %}
+--></ul>

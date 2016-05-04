@@ -6,18 +6,21 @@ section: activities
 ---
 
 <ul class="list-bare">
-    <li class="activity">
-        <div class="media">
-            <div class="media__img  activity__img">
-                <a download="activities_press_conference.pdf" href="/assets/pdf/activities_press_conference.pdf"><img class="fluidimage" src="/assets/img/activities_press_conference_fr.jpg" alt="" /></a>
+    {% assign posts = site.posts|where:"lang", page.lang %}
+    {% for post in site.posts %}
+        <li class="activity">
+            <div class="media">
+                <div class="media__img  activity__img">
+                    <a href="{{ post.url }}">
+                        <img src="/assets/img/{{ post.img_folder}}/thumb.jpg" alt="" class="fluidimage">
+                    </a>
+                </div>
+                <div class="media__content  activity__content">
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.abstract }}</p>
+                    <p><a href="{{ post.url }}">En savoir plus</a></p>
+                </div>
             </div>
-            <div class="media__content  activity__content">
-                <p>Le <strong>19 février 2016</strong> à <strong>17h00</strong>, nous vous invitons à venir nous rencontrer à la <strong>Salle Le Péristyle, Place Saint-Josse, 12 à 1210 Saint-Josse-Ten-Noode</strong>, à l'occasion de la
-                    présentation de l'a.s.b.l.</p>
-            </div>
-            <p>
-                <a download="activities_press_conference.pdf" href="/assets/pdf/activities_press_conference.pdf">Télécharger l'affiche</a>
-            </p>
-        </div>
-    </li>
+        </li>
+    {% endfor %}
 </ul>

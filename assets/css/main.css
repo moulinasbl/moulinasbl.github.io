@@ -785,15 +785,15 @@
 /**
  * CSS Media Object
  */
-.media__img {
-  float: left;
-  margin-right: 1em; }
-
-.media__img img {
-  display: block; }
-
-.media__content {
-  float: left; }
+.media {
+  overflow: hidden; }
+  .media__img {
+    float: left;
+    margin-right: 1em; }
+  .media__img img {
+    display: block; }
+  .media__content {
+    float: left; }
 
 /* ==========================================================================
    Normalize.scss settings
@@ -1384,11 +1384,12 @@ nav {
   background: #66adc2;
   border-bottom: 0.3em solid #204c5a; }
 
-.activity__img {
-  width: 33%; }
-
-.activity__content {
-  width: 60%; }
+.activity {
+  margin-bottom: 2em; }
+  .activity__img {
+    width: 33%; }
+  .activity__content {
+    width: 60%; }
 
 .icon {
   display: inline-block;
