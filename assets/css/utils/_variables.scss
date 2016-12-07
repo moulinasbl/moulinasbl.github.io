@@ -6,6 +6,7 @@ $white: #FFFFFF;
 $blueLight: #4098B3;
 $blueLighter: mix($white, $blueLight, 20%);
 $blueLightest: mix($white, $blueLight, 80%);
+$blueLightestest: mix($white, $blueLight, 90%);
 $blueDark: mix($black, $blueLight, 50%);
 $blueDarker: mix($black, $blueLight, 60%);
 
@@ -40,5 +41,6 @@ $linksColor: $blueLight;
 
 $bettyFont: 'bettyregular';
 
+$mainFont: Calibri, Ubuntu, sans-serif;
 $headerFont: $bettyFont, sans-serif;
-$navFont: $bettyFont, sans-serif;
+$navFont:$mainFont;

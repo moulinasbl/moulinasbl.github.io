@@ -1357,32 +1357,29 @@ nav {
     width: 50%; }
     @media all and (min-width: 46.875em) {
       nav li {
-        font-size: 1.4em;
+        font-size: 1.2em;
         width: auto; } }
   nav a {
     box-sizing: border-box;
-    background: #4098B3;
-    color: #FFFFFF;
+    background: #FFFFFF;
+    text-decoration: underline;
     display: block;
-    padding: 0 .8em;
+    padding: 0 .4em;
     line-height: 2em;
-    height: 2em;
     text-align: center;
     text-decoration: none;
-    transition: all .25s ease;
-    border-color: #204c5a;
-    font-family: "bettyregular", sans-serif;
-    font-weight: 800; }
+    transition: all .25s ease-in-out;
+    font-family: Calibri, Ubuntu, sans-serif;
+    font-weight: 400;
+    margin-right: .5em; }
     nav a:hover {
-      background: #66adc2;
-      border-bottom: 0.3em solid #204c5a; }
+      background: #ecf5f7; }
 
 .about .about a,
 .activities .activities a,
 .contact .contact a,
 .team .team a {
-  background: #66adc2;
-  border-bottom: 0.3em solid #204c5a; }
+  border-bottom: 1px solid #d9eaf0; }
 
 .activity {
   margin-bottom: 2em; }

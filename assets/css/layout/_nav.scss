@@ -17,29 +17,27 @@ nav {
 		width:50%;
 
 		@include mq(medium) {
-			font-size:1.4em;
+			font-size:1.2em;
 			width:auto;
 		}
 	}
 
 	a {
 		box-sizing:border-box;
-		background:$navItemBgColor;
-		color: $navItemTxtColor;
+        background: $navItemTxtColor;
+        text-decoration: underline;
 		display:block;
-		padding:0 .8em;
+		padding:0 .4em;
 		line-height:2em;
-		height:2em;
 		text-align:center;
 		text-decoration:none;
-		transition:all .25s ease;
-		border-color: $navItemBorderColor;
+		transition:all .25s ease-in-out;
 		font-family:$navFont;
-		font-weight:800;
+		font-weight:400;
+        margin-right: .5em;
 
 		&:hover {
-			background:$navItemHoverBgColor;
-			border-bottom:.3em solid $navItemBorderColor;
+			background: $blueLightestest;
 		}
 
 	}
@@ -50,7 +48,6 @@ nav {
 .contact .contact,
 .team .team {
 	a {
-		background:$navItemHoverBgColor;
-		border-bottom:.3em solid $navItemBorderColor;
+		border-bottom:1px solid $blueLightest;
 	}
 }

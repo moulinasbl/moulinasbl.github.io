@@ -16,7 +16,7 @@ $fontSize: 18px;
 }
 
 body {
-	font: #{$fontSize}/1.5 Calibri, Ubuntu, sans-serif;
+	font: #{$fontSize}/1.5 $mainFont;
 	color: $mainTextColor;
 }
 
