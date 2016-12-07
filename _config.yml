@@ -1,3 +1,31 @@
 # Build settings
 exclude: [node_modules/, package.json, gulpfile.js, gulp-config.js, bower.json, .bowerrc]
 markdown: kramdown
+prose:
+    rooturl: '_posts'
+    siteurl: 'http://moulinasbl.be/'
+    media: 'img/articles'
+    metadata:
+        _posts/fr:
+            - name: 'layout'
+              field:
+                element: 'hidden'
+                value: 'fr/default'
+            - name: 'lang'
+              field:
+                element: 'hidden'
+                value: 'fr'
+            - name: 'title'
+              field:
+                element: 'text'
+                label: 'Title'
+            - name: 'abstract'
+              field:
+                element: 'text'
+                label: 'Summary'
+                placeholder: 'A short summary of the article...'
+            - name: 'img_folder'
+              field:
+                element: 'text'
+                label: 'Image folder'
+                placeholder: 'Specify the image folder if there is a gallery'

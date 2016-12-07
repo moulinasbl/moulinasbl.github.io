@@ -2,12 +2,13 @@
 layout: fr/default
 title: Nos activités
 lang: fr
-section: activities
+section: articles
 ---
 
 <ul class="list-bare">
     {% assign posts = site.posts|where:"lang", page.lang %}
     {% for post in site.posts %}
+        {% if post.lang == page.lang %}
         <li class="activity">
             <div class="media">
                 <div class="media__img  activity__img">
@@ -22,5 +23,6 @@ section: activities
                 </div>
             </div>
         </li>
+        {% endif %}
     {% endfor %}
 </ul>
