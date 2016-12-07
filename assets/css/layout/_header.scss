@@ -4,19 +4,12 @@ header {
 .name {
 	color:$headerTextColor;
 	font-family: $headerFont;
-	font-size:2em;
+	font-size:3em;
 	display:inline-block;
 	line-height:2em;
 	vertical-align:middle;
 
-    margin-top: 1em;
-
-	@include mq(small) {
-	    font-size:3em;
-    }
-
 	@include mq(medium) {
-        margin-top: 0;
 		font-size:4em;
 	}
 
@@ -29,8 +22,8 @@ header {
 	display:inline-block;
 	position:relative;
 	vertical-align:top;
-	height:100px;
-	width:156px;
+	height:137px;
+	width:214px;
 
 
 	.body {
