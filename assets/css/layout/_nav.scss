@@ -1,8 +1,12 @@
 nav {
-	margin:.5em 0;
+	margin:2em 0 .5em;
 
 	@include mq(medium) {
-		margin:0 0 .5em 12em;
+	    margin:.5em 0;
+    }
+
+	@include mq(medium) {
+		margin:0 0 0 12em;
 	}
 
 	ul, li {
@@ -12,7 +16,7 @@ nav {
 	}
 
 	li {
-		font-size:1.4em;
+		font-size:1.2em;
 		display:inline-block;
 		width:50%;
 

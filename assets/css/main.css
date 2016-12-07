@@ -1267,12 +1267,14 @@ h4 {
 .name {
   color: #4098B3;
   font-family: "bettyregular", sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   display: inline-block;
   line-height: 2em;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-top: 1em; }
   @media all and (min-width: 46.875em) {
     .name {
+      margin-top: 0;
       font-size: 4em; } }
   .name a {
     text-decoration: none; }
@@ -1281,8 +1283,8 @@ h4 {
   display: inline-block;
   position: relative;
   vertical-align: top;
-  height: 137px;
-  width: 214px; }
+  height: 100px;
+  width: 156px; }
   .logo .body {
     background: url(../img/logo_corps.png);
     background-size: 100% 100%;
@@ -1343,16 +1345,19 @@ footer {
   text-align: center; }
 
 nav {
-  margin: .5em 0; }
+  margin: 2em 0 .5em; }
   @media all and (min-width: 46.875em) {
     nav {
-      margin: 0 0 .5em 12em; } }
+      margin: .5em 0; } }
+  @media all and (min-width: 46.875em) {
+    nav {
+      margin: 0 0 0 12em; } }
   nav ul, nav li {
     margin: 0;
     padding: 0;
     list-style: none; }
   nav li {
-    font-size: 1.4em;
+    font-size: 1.2em;
     display: inline-block;
     width: 50%; }
     @media all and (min-width: 46.875em) {
