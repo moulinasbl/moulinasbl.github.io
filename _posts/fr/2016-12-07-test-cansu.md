@@ -1,7 +1,7 @@
 ---
 lang: fr
 layout: fr/default
-published: false
+published: true
 title: Test Cansu
 abstract: Résumé de l'article
 ---
