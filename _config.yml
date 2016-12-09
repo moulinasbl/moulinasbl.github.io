@@ -1,20 +1,91 @@
 # Build settings
 exclude: [node_modules/, package.json, gulpfile.js, gulp-config.js, bower.json, .bowerrc]
 markdown: kramdown
+t:
+    fr:
+        read-more: Lire la suite
+    nl:
+        read-more: Devamini oku
+    tr:
+        read-more: Devamini oku
+description:
+    fr: Le Moulin fournit un soutien psychologique et des conseils juridiques pour les victimes de maltraitance et les accidentés du travail ou de la route.
+    nl: Le Moulin geeft psychologische ondersteuning en juridisch advies aan de slachoffers van mishandelingen en arbeids- of verkeersongevallen.
+    tr: Le Moulin, psikolojik destek ve yasal tavisyeler ile aile içi şiddet, aile sorunları, iş kazaları ve trafik kazaları mağdurlarına yardım etmeyi kendisine görev edinmiştir.
+defaults:
+    -
+        scope:
+            path: "fr"
+            type: "posts"
+        values:
+            lang: fr
+            layout: fr/news
+            section: news
+    -
+        scope:
+            path: "nl"
+            type: "posts"
+        values:
+            lang: nl
+            layout: nl/news
+            section: news
+    -
+        scope:
+            path: "tr"
+            type: "posts"
+        values:
+            lang: tr
+            layout: tr/news
+            section: news
+
 prose:
     rooturl: '_posts'
     siteurl: 'http://moulinasbl.be/'
     media: 'img/articles'
     metadata:
         _posts/fr:
-            - name: 'layout'
-              field:
-                element: 'hidden'
-                value: 'fr/default'
             - name: 'lang'
               field:
                 element: 'hidden'
                 value: 'fr'
+            - name: 'title'
+              field:
+                element: 'text'
+                label: 'Title'
+            - name: 'abstract'
+              field:
+                element: 'text'
+                label: 'Summary'
+                placeholder: 'A short summary of the article...'
+            - name: 'img_folder'
+              field:
+                element: 'text'
+                label: 'Image folder'
+                placeholder: 'Specify the image folder if there is a gallery'
+        _posts/nl:
+            - name: 'lang'
+              field:
+                element: 'hidden'
+                value: 'nl'
+            - name: 'title'
+              field:
+                element: 'text'
+                label: 'Title'
+            - name: 'abstract'
+              field:
+                element: 'text'
+                label: 'Summary'
+                placeholder: 'A short summary of the article...'
+            - name: 'img_folder'
+              field:
+                element: 'text'
+                label: 'Image folder'
+                placeholder: 'Specify the image folder if there is a gallery'
+        _posts/tr:
+            - name: 'lang'
+              field:
+                element: 'hidden'
+                value: 'tr'
             - name: 'title'
               field:
                 element: 'text'

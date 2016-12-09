@@ -1,5 +1,7 @@
 /* == Colors == */
 
+$color-grey: #909090;
+
 $black: #000000;
 $white: #FFFFFF;
 
@@ -36,11 +38,3 @@ $footerBgColor: $blueDark;
 $footerTxtColor: $white;
 
 $linksColor: $blueLight;
-
-/* == Fonts == */
-
-$bettyFont: 'bettyregular';
-
-$mainFont: Calibri, Ubuntu, sans-serif;
-$headerFont: $bettyFont, sans-serif;
-$navFont:$mainFont;
