@@ -1,8 +1,10 @@
 ---
-title: Mutlu yıller
-layout: tr/news
 lang: tr
+layout: tr/news
+title: Mutlu yıllar !
 section: news
+published: true
+abstract: Moulin asbl  iyi seneler diler !
 ---
 
 Çok değerli üyelerimiz, manen yanımızda olup destek veren dostlarımız, danışanlarımız,
