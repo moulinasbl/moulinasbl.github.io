@@ -1182,6 +1182,9 @@ body {
 .text-small {
   font-size: .8em; }
 
+.text-mute {
+  color: #909090; }
+
 html {
   background: #204c5a; }
 
@@ -1379,8 +1382,7 @@ nav {
       background: #ecf5f7; }
 
 .about .about a,
-.articles .articles a,
-.activities .activities a,
+.news .news a,
 .contact .contact a,
 .team .team a {
   border-bottom: 1px solid #d9eaf0; }

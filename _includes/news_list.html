@@ -1,0 +1,24 @@
+<ul class="list-bare">
+    {% assign posts = site.posts|where:"lang", page.lang %}
+    {% for post in site.posts %}
+    {% if post.lang == page.lang %}
+    <li class="news">
+        <div class="media">
+            <div class="media__img  activity__img">
+                {% if post.img_folder %}
+                <a href="{{ post.url }}">
+                    <img src="/assets/img/{{ post.img_folder }}/thumb.jpg" alt="" class="fluidimage">
+                </a>
+                {% endif %}
+            </div>
+            <div class="media__content  activity__content">
+                <h3>{{ post.title }}</h3>
+                <p class="text-mute  text-small"><time>{{post.date | date: '%d/%m/%Y' }}</time></p>
+                <p>{{ post.abstract }}</p>
+                <p><a href="{{ post.url }}">{{ site.t[page.lang].read-more }}</a></p>
+            </div>
+        </div>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
