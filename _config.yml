@@ -15,35 +15,20 @@ description:
 defaults:
     -
         scope:
-            path: "fr"
+            path: ""
             type: "posts"
         values:
-            lang: fr
-            layout: fr/news
             section: news
-    -
-        scope:
-            path: "nl"
-            type: "posts"
-        values:
-            lang: nl
-            layout: nl/news
-            section: news
-    -
-        scope:
-            path: "tr"
-            type: "posts"
-        values:
-            lang: tr
-            layout: tr/news
-            section: news
-
 prose:
     rooturl: '_posts'
     siteurl: 'http://moulinasbl.be/'
     media: 'img/articles'
     metadata:
         _posts/fr:
+            - name: 'layout'
+              field:
+                element: 'hidden'
+                value: 'fr/news'
             - name: 'lang'
               field:
                 element: 'hidden'
@@ -63,6 +48,10 @@ prose:
                 label: 'Image folder'
                 placeholder: 'Specify the image folder if there is a gallery'
         _posts/nl:
+            - name: 'layout'
+              field:
+                element: 'hidden'
+                value: 'nl/news'
             - name: 'lang'
               field:
                 element: 'hidden'
@@ -82,6 +71,10 @@ prose:
                 label: 'Image folder'
                 placeholder: 'Specify the image folder if there is a gallery'
         _posts/tr:
+            - name: 'layout'
+              field:
+                element: 'hidden'
+                value: 'tr/news'
             - name: 'lang'
               field:
                 element: 'hidden'
