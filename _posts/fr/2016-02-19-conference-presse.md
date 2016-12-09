@@ -1,5 +1,6 @@
 ---
 title: Conférence de presse du 19 février 2016
+layout: fr/news
 lang: fr
 section: news
 img_folder: activities/press-conference

@@ -1,5 +1,6 @@
 ---
 title: Mutlu yıller
+layout: tr/news
 lang: tr
 section: news
 ---

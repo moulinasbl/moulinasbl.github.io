@@ -1387,13 +1387,6 @@ nav {
 .team .team a {
   border-bottom: 1px solid #d9eaf0; }
 
-.activity {
-  margin-bottom: 2em; }
-  .activity__img {
-    width: 33%; }
-  .activity__content {
-    width: 60%; }
-
 .icon {
   display: inline-block;
   width: 32px;
@@ -1410,6 +1403,13 @@ nav {
 
 .fluidimage {
   max-width: 100%; }
+
+.c-news {
+  margin-bottom: 2em; }
+  .c-news__img {
+    width: 33%; }
+  .c-news__content {
+    width: 60%; }
 
 .intro {
   color: #204c5a;
