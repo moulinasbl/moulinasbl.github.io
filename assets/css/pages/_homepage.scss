@@ -11,11 +11,11 @@
 }
 
 .address {
-	@extend %grid__module;
-	@extend %medium-span-2of3;
+	@extend .grid__module;
+	@extend .medium-span-2of3;
 }
 
 .map {
-	@extend %grid__module;
-	@extend %medium-span-1of3;
+	@extend .grid__module;
+	@extend .medium-span-1of3;
 }

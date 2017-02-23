@@ -51,7 +51,7 @@
 */
 .grid--center {
   text-align: center; }
-  .grid--center > .grid__module {
+  .grid--center > .grid__module, .grid--center > .address, .grid--center > .map {
     text-align: left; }
 
 /**
@@ -61,7 +61,7 @@
 */
 .grid--right {
   text-align: right; }
-  .grid--right > .grid__module {
+  .grid--right > .grid__module, .grid--right > .address, .grid--right > .map {
     text-align: left; }
 
 /**
@@ -71,7 +71,7 @@
 */
 .grid--gutterless {
   margin-left: 0; }
-  .grid--gutterless > .grid__module {
+  .grid--gutterless > .grid__module, .grid--gutterless > .address, .grid--gutterless > .map {
     padding-left: 0; }
 
 /**
@@ -81,7 +81,7 @@
 */
 .grid--spaced {
   margin-left: 0; }
-  .grid--spaced > .grid__module {
+  .grid--spaced > .grid__module, .grid--spaced > .address, .grid--spaced > .map {
     margin-bottom: 40px; }
 
 /*
@@ -93,7 +93,7 @@
  * - 4. using inline-block to stack the modules side by side (comment out white space in html)
  * - 5. align top of modules
 */
-.grid__module {
+.grid__module, .address, .map {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -397,9 +397,9 @@
     width: 100%; }
   .medium-span-1of2, .medium-span-2of4, .medium-span-2of6, .medium-span-4of8, .medium-span-5of10, .medium-span-6of12 {
     width: 50%; }
-  .medium-span-1of3, .medium-span-3of6, .medium-span-4of12 {
+  .medium-span-1of3, .medium-span-3of6, .medium-span-4of12, .map {
     width: 33.333%; }
-  .medium-span-2of3, .medium-span-4of6, .medium-span-8of12 {
+  .medium-span-2of3, .medium-span-4of6, .medium-span-8of12, .address {
     width: 66.666%; }
   .medium-span-1of4, .medium-span-2of8, .medium-span-3of12 {
     width: 25%; }
@@ -1175,7 +1175,7 @@ th {
   font-style: normal; }
 
 body {
-  font: 18px / 1.5 Calibri, Ubuntu, sans-serif;
+  font: 18px/1.5 Calibri, Ubuntu, sans-serif;
   color: #202020; }
 
 /* Text variants */
@@ -1270,28 +1270,35 @@ h4 {
 .name {
   color: #4098B3;
   font-family: "bettyregular", sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   display: inline-block;
-  line-height: 2em;
-  vertical-align: middle; }
+  vertical-align: middle;
+  line-height: 1.2em;
+  padding-left: .15em; }
   @media all and (min-width: 46.875em) {
     .name {
-      font-size: 4em; } }
+      font-size: 3em; } }
   .name a {
     text-decoration: none; }
+
+.logo-link {
+  display: inline-block; }
+  @media all and (min-width: 46.875em) {
+    .logo-link {
+      float: left; } }
 
 .logo {
   display: inline-block;
   position: relative;
   vertical-align: top;
-  height: 137px;
-  width: 214px; }
+  height: 100px;
+  width: 155px; }
   .logo .body {
     background: url(../img/logo_corps.png);
     background-size: 100% 100%;
     position: absolute;
-    width: 214px;
-    height: 137px;
+    height: 100px;
+    width: 155px;
     top: 0;
     left: 0;
     z-index: 0; }
@@ -1301,10 +1308,10 @@ h4 {
     background: url(../img/logo_ailes.png);
     background-size: 100% 100%;
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     top: 0;
-    left: 17px;
+    left: 12px;
     z-index: 1; }
   .logo:hover .wings {
     -webkit-animation-play-state: paused;
@@ -1324,7 +1331,7 @@ h4 {
     .language-switcher {
       float: right;
       margin-bottom: 0;
-      padding: .5em; }
+      padding: 0 .5em .5em .5em; }
       .language-switcher li {
         display: block; } }
 
@@ -1352,7 +1359,7 @@ nav {
       margin: .5em 0; } }
   @media all and (min-width: 46.875em) {
     nav {
-      margin: 0 0 0 12em; } }
+      margin: 0; } }
   nav ul, nav li {
     margin: 0;
     padding: 0;
